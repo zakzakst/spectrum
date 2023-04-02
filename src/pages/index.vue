@@ -1,12 +1,23 @@
 <template>
   <div class="page">
-    <AccordionItem>
-      <template v-slot:heading>見出し</template>
-      <template v-slot:content>コンテンツ</template>
-    </AccordionItem>
+    <AccordionItems :items="items" />
   </div>
 </template>
 
 <script setup lang="ts">
-import AccordionItem from "@/components/molecules/AccordionItem.vue";
+import AccordionItems from "@/components/molecules/AccordionItems.vue";
+
+// models
+import { Item } from "@/models/accordion";
+
+const items = ref<Item[]>([
+  {
+    heading: "見出し1",
+    content: "コンテンツ",
+  },
+  {
+    heading: "見出し2",
+    content: "コンテンツ",
+  },
+]);
 </script>

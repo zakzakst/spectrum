@@ -9,7 +9,9 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@types/node": "^18.15.11",
     "nuxt": "^3.3.2",
-    "sass": "^1.60.0"
+    "sass": "^1.60.0",
+    "zod": "^3.21.4"
   }
 }
